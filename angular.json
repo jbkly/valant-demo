@@ -47,14 +47,8 @@
             "polyfills": "apps/demo/src/polyfills.ts",
             "tsConfig": "apps/demo/tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "apps/demo/src/favicon.ico",
-              "apps/demo/src/assets"
-            ],
-            "styles": [
-              "apps/demo/src/styles.less",
-              "node_modules/devextreme/dist/css/dx.light.css"
-            ],
+            "assets": ["apps/demo/src/favicon.ico", "apps/demo/src/assets"],
+            "styles": ["apps/demo/src/styles.less", "node_modules/devextreme/dist/css/dx.light.css"],
             "scripts": []
           },
           "configurations": {
@@ -107,17 +101,12 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/demo/src/**/*.ts",
-              "apps/demo/src/**/*.html"
-            ]
+            "lintFilePatterns": ["apps/demo/src/**/*.ts", "apps/demo/src/**/*.html"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/demo"
-          ],
+          "outputs": ["coverage/apps/demo"],
           "options": {
             "jestConfig": "apps/demo/jest.config.js",
             "passWithNoTests": true
@@ -146,9 +135,7 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/demo-e2e/**/*.{js,ts}"
-            ]
+            "lintFilePatterns": ["apps/demo-e2e/**/*.{js,ts}"]
           }
         }
       }
